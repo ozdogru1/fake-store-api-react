@@ -1,0 +1,32 @@
+import { Typography } from "@mui/material";
+import { Stack } from "@mui/system";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./navbar.css";
+
+const Navbar = () => {
+  return (
+    <>
+      <Stack
+        direction="row"
+        spacing={2}
+        justifyContent="center"
+        alignItems="center"
+        sx={{ height: "60px", backgroundColor: "#fff",  }}
+        
+      >
+        <Link to="/">
+          <Typography variant="subtitle1">Home</Typography>
+        </Link>
+        <Link to="/products">
+          <Typography variant="subtitle1">Products</Typography>
+        </Link>
+        <Link to="/cart">
+          <Typography variant="subtitle1">Cart</Typography>
+        </Link>
+      </Stack>
+    </>
+  );
+};
+
+export default Navbar;
