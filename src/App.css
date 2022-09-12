@@ -1,6 +1,7 @@
- .light{
-    background-color: blue;
- }
-.dark{
-    background-color: black;
- }
+.app {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}

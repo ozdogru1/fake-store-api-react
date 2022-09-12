@@ -9,10 +9,10 @@ const Navbar = () => {
     <>
       <Stack
         direction="row"
-        spacing={2}
+        spacing={5}
         justifyContent="center"
         alignItems="center"
-        sx={{ height: "60px", backgroundColor: "#fff",  }}
+        sx={{ height: "60px", backgroundColor: "#f3e5f5"  }}
         
       >
         <Link to="/">

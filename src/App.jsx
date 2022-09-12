@@ -7,26 +7,11 @@ import Cart from "./pages/Cart";
 import SingleProduct from "./pages/SingleProduct";
 import Footer from "./components/footer/Footer";
 import TopNavbar from "./components/top-navbar/TopNavbar";
-import { useContext } from "react";
-import { CartContext } from "./context/cart-context/CartContext";
 import "./App.css";
-
-const App = () => {
-  const { theme } = useContext(CartContext);
-  console.log(theme);
  
+const App = () => {
   return (
-    <div
-      style={{
-        paddingLeft: "30px",
-        paddingRight: "30px",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        height: "100vh",
-      }}
-      className={theme}
-    >
+    <div className= "app"> 
       <div>
         <TopNavbar />
         <Navbar />
